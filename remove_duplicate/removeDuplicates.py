@@ -6,6 +6,18 @@
 # Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
 # It doesn't matter what you leave beyond the returned length.
 
+# why two pointer is bettr than hashmap in this case?
+# because we are not using any extra space and we are not modifying the input array in-place with O(1) extra memory.
+# we are using two pointers to traverse the array and compare the elements.
+# we are not using any extra space and we are not modifying the input array in-place with O(1) extra memory.
+# we are using two pointers to traverse the array and compare the elements.
+
+# | Approach              | Time Complexity | Space Complexity | In-Place                  |
+# | --------------------- | --------------- | ---------------- | ------------------------- |
+# | Two-pointer (optimal) | O(n)            | O(1)             | ✅ Yes                     |
+# | Hash map / set        | O(n)            | O(n)             | ⚠️ No (needs extra space) |
+
+
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         i = 0
